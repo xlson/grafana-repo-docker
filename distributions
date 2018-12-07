@@ -1,0 +1,7 @@
+Origin: Grafana Labs
+Label: deb.grafana.com
+Codename: stretch
+Architectures: amd64 arm64 armhf
+Components: main
+Description: Grafana apt repository
+Contents: percomponent
