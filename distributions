@@ -4,4 +4,5 @@ Codename: stretch
 Architectures: amd64 arm64 armhf
 Components: main
 Description: Grafana apt repository
+SignWith: 7B2D8FCE9C85AD410B44071DF683CE3BC0CAD97D
 Contents: percomponent

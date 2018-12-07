@@ -8,4 +8,4 @@ fi
 
 docker build --tag grafana-repo-gen .
 
-docker run --user "$(id -u):$(id -g)" -v "$PWD:/work" grafana-repo-gen "${_version}"
+docker run -ti --user "$(id -u):$(id -g)" -v "$PWD:/work" grafana-repo-gen "${_version}"
