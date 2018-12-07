@@ -29,5 +29,4 @@ apt install grafana
 ## Missing features
 
 - rework it for CircleCI
-- GPG sign the files
 
