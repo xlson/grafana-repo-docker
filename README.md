@@ -4,16 +4,21 @@ This is a POC for how to setup an apt repository for Grafana.
 
 ## Usage of the deployed repo
 
-*/etc/apt/sources.list.d/grafana.list*
+*Create /etc/apt/sources.list.d/grafana.list*
 ```
 deb https://grafana-deb.storage.googleapis.com/oss/apt/debian stretch main
 ```
 
-*add gpg signature*
+*Add gpg signature*
 ```
 curl https://grafana-deb.storage.googleapis.com/gpg.key | sudo apt-key add -
 ```
 
+*Then run*
+```
+apt update
+apt install grafana
+```
 
 ## Missing features
 
