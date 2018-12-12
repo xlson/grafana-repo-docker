@@ -1,0 +1,9 @@
+[grafana]
+name=grafana
+baseurl=https://grafana-deb.storage.googleapis.com/oss/grafana/yum
+repo_gpgcheck=1
+enabled=1
+gpgcheck=1
+gpgkey=https://grafana-deb.storage.googleapis.com/gpg.key https://grafanarel.s3.amazonaws.com/RPM-GPG-KEY-grafana
+sslverify=1
+sslcacert=/etc/pki/tls/certs/ca-bundle.crt
