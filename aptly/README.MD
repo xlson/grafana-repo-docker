@@ -19,4 +19,7 @@ create `/etc/apt/sources.list.d/grafana.list` with this content:
 deb https://grafana-deb.storage.googleapis.com/oss/grafana/squeeze squeeze main
 ```
 
-apt-key add this key : https://grafana-deb.storage.googleapis.com/gpg.key
+*Add gpg signature*
+```
+curl https://grafana-deb.storage.googleapis.com/gpg.key | sudo apt-key add -
+```
