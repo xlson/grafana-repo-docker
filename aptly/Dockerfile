@@ -10,3 +10,11 @@ RUN git clone https://github.com/aptly-dev/aptly $GOPATH/src/github.com/aptly-de
 FROM grafana/grafana-ci-deploy:1.0.0
 
 COPY --from=0 /go/bin/aptly /usr/local/bin/aptly
+
+USER root
+
+RUN apt update && apt install -y createrepo && \
+    apt-get autoremove -y && \
+    rm -rf /var/lib/apt/lists/*
+
+USER circleci
