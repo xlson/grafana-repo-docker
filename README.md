@@ -13,3 +13,9 @@ With above, adding a deb repo would look like this:
 ```
 deb https://repo.grafana.com/grafana/oss/deb squeeze main
 ```
+
+Alternatively, if we do one big repo for all products we'd do
+```
+deb https://repo.grafana.com/oss/deb squeeze main
+```
+
